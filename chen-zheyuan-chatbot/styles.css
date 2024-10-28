@@ -1,0 +1,67 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Left side with background image */
+  .image-side {
+    flex: 1;
+    background-image: url('image/image.jpg'); /* Path to your image */
+    background-size: cover; /* Covers the full area while maintaining aspect ratio */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    
+  }
+  
+  /* Right side with content */
+  .content-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue; /* Background color for the content side */
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Chat container styling */
+  .chat-container {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    color: #333;
+  }
+  
+  /* Chat box for messages */
+  #chat-box {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .user-message {
+    color: #0099ff;
+  }
+  
+  .bot-message {
+    color: #000000;
+  }
+  

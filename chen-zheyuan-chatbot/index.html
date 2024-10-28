@@ -1,0 +1,30 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Half-Screen Background Image</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="image-side"></div> <!-- Left half with the background image -->
+    <div class="content-side">
+        <div class="chat-container">
+          <h1>Chat Box</h1>
+          <div id="chat-box">
+            <p class="user-message">User: Hello!</p>
+            <p class="bot-message">Bot: Hi there!</p>
+           
+            <button onclick="sendMessage()">Send</button>
+            <script src="app.js"></script> 
+            <input type="text" id="user-input" placeholder="Type your message...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+  
